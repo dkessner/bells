@@ -33,8 +33,7 @@ class Bells {
     this.unmute = document.getElementById("unmute");
     this.unmute.addEventListener("click", this.handleUnmute.bind(this));
 
-    //this.sound = document.getElementById("alarm-sound");
-    this.sound = new Audio("bells.mp3");
+    this.bells = new Audio("bells.mp3");
 
     this.addTestBellTimes();
     this.bellTimes.sort();
@@ -97,18 +96,18 @@ class Bells {
   tick() {
     this.updateTime();
     if (this.now == this.nextBell) {
-        this.sound.play();
+        this.bells.play();
         this.updateNextBell();
     }
   }
 
   handleUnmute() {
     this.unmute.value = "Sound enabled";
-    //this.unmute.disabled = true;
     this.unmute.style.background = "#fff";
     this.unmute.style.color = "#260859"; /* dark purple */
+    //this.unmute.disabled = true;
 
-    this.sound.play();
+    this.bells.play();
   }
 }
 
