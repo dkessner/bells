@@ -54,6 +54,10 @@ class Bells {
     date.setSeconds(date.getSeconds() + 10);
     sec = this.padzero(date.getSeconds());
     this.bellTimes.push(hr + min + sec);    
+
+    date.setSeconds(date.getSeconds() + 10);
+    sec = this.padzero(date.getSeconds());
+    this.bellTimes.push(hr + min + sec);    
   }
 
   padzero(num) {
