@@ -35,7 +35,7 @@ class Bells {
 
     this.sound = document.getElementById("alarm-sound");
 
-    //this.addTestBellTimes();
+    this.addTestBellTimes();
     this.bellTimes.sort();
     console.log(this.bellTimes);
 
