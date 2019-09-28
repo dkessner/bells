@@ -34,7 +34,7 @@ class Bells {
     this.unmute.addEventListener("click", this.handleUnmute.bind(this));
 
     //this.sound = document.getElementById("alarm-sound");
-    this.sound = new Audio("bells.wav");
+    this.sound = new Audio("https://dkessner.github.io/bells/bells.wav");
 
     this.addTestBellTimes();
     this.bellTimes.sort();
