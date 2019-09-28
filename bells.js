@@ -34,6 +34,8 @@ class Bells {
     this.unmute.addEventListener("click", this.handleUnmute.bind(this));
 
     this.bells = new Audio("bells.mp3");
+    this.bells.src = this.bells.src;
+    this.bells.currentTime = 0;
 
     //this.addTestBellTimes();
     this.bellTimes.sort();
