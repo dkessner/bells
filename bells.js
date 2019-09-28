@@ -35,7 +35,7 @@ class Bells {
 
     this.bells = new Audio("bells.mp3");
 
-    this.addTestBellTimes();
+    //this.addTestBellTimes();
     this.bellTimes.sort();
     console.log(this.bellTimes);
 
