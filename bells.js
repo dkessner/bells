@@ -104,9 +104,11 @@ class Bells {
 
   handleUnmute() {
     this.unmute.value = "Sound enabled";
-    this.unmute.disabled = true;
+    //this.unmute.disabled = true;
     this.unmute.style.background = "#fff";
     this.unmute.style.color = "#260859"; /* dark purple */
+
+    this.sound.play();
   }
 }
 
