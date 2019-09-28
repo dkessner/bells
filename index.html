@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Javascript Alarm Clock Demo
+    </title>
+    <link href="style.css" rel="stylesheet">
+    <script src="bells.js"></script>
+  </head>
+  <body>
+    <img id="M" src="M.jpg">
+    <div id="clockSection">
+      <div class="square">
+        <div class="digits" id="chr">00</div>
+        <div class="text">HR</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="cmin">00</div>
+        <div class="text">MIN</div>
+      </div>
+      <div class="square">
+        <div class="digits" id="csec">00</div>
+        <div class="text">SEC</div>
+      </div>
+    </div>
+
+    <div id="nextSection">
+      <h1 class="header" id="nextBell">
+        Next bell
+      </h1>
+      <div>
+        <input type="button" value="Unmute" id="unmute"/>
+      </div>
+    </div>
+
+    <audio id="alarm-sound">
+      <source src="bells.wav" type="audio/mp3">
+    </audio>
+  </body>
+</html>
