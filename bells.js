@@ -15,16 +15,6 @@ window.onload = function()
 
 class Bells {
 
-  bellTimes = ["080000", "082500",  // Healthy Start
-               "083000",            // Class
-               "094000",            // Community
-               "102000", "103500",  // Break
-               "104000",            // Class
-               "115000", "123000",  // Lunch
-               "123500", "134500",  // Class
-               "135000", "150000",  // Class
-               ];
-
   constructor() {
     this.chr = document.getElementById("chr");
     this.cmin = document.getElementById("cmin");
@@ -34,6 +24,16 @@ class Bells {
     this.unmute.addEventListener("click", this.handleUnmute.bind(this));
 
     this.bells = new Audio("bells.mp3");
+
+    this.bellTimes = ["080000", "082500",  // Healthy Start
+                      "083000",            // Class
+                      "094000",            // Community
+                      "102000", "103500",  // Break
+                      "104000",            // Class
+                      "115000", "123000",  // Lunch
+                      "123500", "134500",  // Class
+                      "135000", "150000",  // Class
+                      ];
 
     //this.addTestBellTimes();
     this.bellTimes.sort();
