@@ -26,10 +26,10 @@ class Bells {
     this.bells = new Audio("bells.mp3");
 
     this.bellTimes = ["083000", "094000",  // Class
-                      "094500", "102500",  // Community
-                      "103000", "114000",  // Class
+                      "102500",  // Community
+                      "103000", "114500",  // Class
                                            // Lunch
-                      "122000", "133000",  // Class
+                      "123000", "134000",  // Class
                       "135000", "150000",  // Class
                       ];
 
